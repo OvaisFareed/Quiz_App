@@ -1,0 +1,41 @@
+<div>
+    <table>
+        <tr>
+            <td>
+                <md-button class="md-primary md-raised" ng-click="regform = true">Register yourself for Quiz</md-button>
+            </td>
+            <td><b>OR</b></td>
+            <td>
+                <md-button class="md-primary md-raised" ng-click="fbLogin();">Login with Fb</md-button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form ng-show="regform">
+                    <h3>Registeration Form:</h3>
+                    <md-input-container>
+                        <label>Username:</label>
+                        <input type="text" ng-model="user.name">
+                    </md-input-container>
+                    <br><br>
+                    <md-input-container>
+                        <label>Email:</label>
+                        <input type="email" ng-model="user.email">
+                    </md-input-container>
+                    <br><br>
+                    <md-input-container>
+                        <label>Password:</label>
+                        <input type="password" ng-model="user.pwd">
+                    </md-input-container>
+                    <br><br>
+                    <md-input-container>
+                        <label>Confirm Password:</label>
+                        <input type="password" ng-model="user.conPwd">
+                    </md-input-container>
+                    <br><br>
+                    <md-button class="md-primary md-raised" ng-click="signUp(user,'/login')">Sign Up</md-button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>

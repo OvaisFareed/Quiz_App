@@ -1,0 +1,45 @@
+<div>
+    <md-button class="md-primary md-raised" ng-show="startbtn" ng-click="startQuiz();">start Quiz</md-button>
+    <div ng-show="quizDiv">
+        <table>
+            <tr>
+                <td>
+                    <div ng-model="myIndex">
+                        <h3>{{quiz[myIndex].quesNo}}</h3>
+                        <p>{{quiz[myIndex].ques}}</p>
+                        <ul>
+                            <li ng-repeat="opt in quiz[myIndex].options">
+                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" ng-model="data.cb5" class="md-primary" ng-click="userAns(opt)">{{opt}}
+                                    </md-checkbox>
+                            </li>
+                        </ul>
+                    </div>
+                    <md-button class="md-primary md-raised" ng-click="nextQues()">Next</md-button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--
+<div>
+    <md-button class="md-primary md-raised" ng-click="startQuiz();">start Quiz</md-button>
+    <div ng-show="quizDiv">
+        <table id="quizTable">
+            <tr ng-repeat="q in quiz">
+                <td>
+                    <div>
+                        <h3>{{q.quesNo}}</h3>
+                        <p>{{q.ques}}</p>
+                            <ul>
+                                <li ng-repeat="opt in q.options">
+                                    <input type="checkbox" ng-click="userAns(opt)">{{opt}}
+                                </li>
+                            </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <md-button class="md-primary md-raised" ng-click="checkResult('/result');">Check Result</md-button>
+    </div>
+
+</div>-->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="exported_files/styles.css">
+    <title></title>
+    <!--<meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">-->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script src="./bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="./bower_components/firebase/firebase.js"></script>
+    <script src="./bower_components/angular-new-router/dist/router.es5.min.js"></script>
+    <script src="index.js"></script>
+    <script src="components/create/create.js"></script>
+    <script src="components/result/result.js"></script>
+</head>
+<body ng-app="quizApp">
+<!--    <md-toolbar  ng-controller="ToolbarHomeController">
+        <div class="md-toolbar-tools">
+            <img src="exported_files/images/Logo.svg" alt="Logo" height="74" width="150"/>
+            Attendance System
+            &lt;!&ndash; fill up the space between left and right area &ndash;&gt;
+           <span flex>
+            &lt;!&ndash;     <div layout="row">
+                    <div flex="10"></div>
+                    <md-button flex="10">
+                        Education
+                    </md-button>
+                    <md-button flex="10">
+                        Services
+                    </md-button>
+                    <md-button flex="10">
+                        Products
+                    </md-button>
+                    <md-button flex="15">
+                        Management
+                    </md-button>
+                    <md-button flex="10">
+                        Directory
+                    </md-button>
+                    <md-button flex="10">
+                        Events
+                    </md-button>
+                </div>&ndash;&gt;
+            </span>
+
+            <md-button ng-click="showSignupPage($event)" ng-hide="loggedIn()">
+                Sign up
+            </md-button>
+            <md-button ng-click="showLoginPage($event)" ng-hide="loggedIn()">
+                Sign in
+            </md-button>
+            <md-button ng-click="logout($event)" ng-show="loggedIn()" style="margin-top: 20px">Sign out</md-button>
+            <a style="font-size: 14px; font-weight: 500; text-transform: uppercase;" ng-show="getLoggedInUserObj()" href="/#!/user/{{getLoggedInUserObj().userID}}">
+                <img ng-show="loggedIn()" class="userProfileImg" get-gravatar="{{getLoggedInUserObj().email}}" watch="user.email" alt="ProfileImg"/></a>
+        </div>
+    </md-toolbar>-->
+<div ng-controller="quizCtrl">
+<header>
+    <img src="exported_files/images/Logo.svg" alt="Logo" height="74" width="150"/>
+    <span id="heading">Quiz App</span>
+    <span id="btn1">
+    <md-button class="md-primary md-raised" ng-click="loginPage1('/login');">User Login</md-button>
+    <md-button id="btn2" class="md-primary md-raised" ng-click="loginPage2('/login');">Admin Login</md-button>
+    <md-button class="md-raised md-warn" ng-click="fbLogout('/regster');">Logout</md-button>
+    </span>
+</header>
+
+    <ng-viewport></ng-viewport>
+</div>
+</body>
+</html>

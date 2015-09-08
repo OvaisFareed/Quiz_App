@@ -1,0 +1,35 @@
+/*body{
+    text-align: center;
+    background: lightgray;
+}*/
+
+header{
+    background-color: #01579b;
+}
+
+#heading{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 30%;
+}
+
+#btn1{
+    padding: 25%;
+}
+
+td{
+    margin-left: 10px;
+}
+
+div{
+    background: white;
+}
+
+#quizTable{
+    background: lightcyan;
+}
+li{
+    list-style: none;
+}

@@ -1,0 +1,191 @@
+.boldTitle {
+    color: #01579b;
+}
+
+.topicCard {
+    min-height: 300px;
+}
+
+.dialogHeader {
+    background-color: #dcedc8;
+    margin: 0px;
+}
+
+.cardHeader {
+    background-color: #dcedc8;
+}
+
+.cardHeaderTitle {
+    padding-left: 10px;
+}
+
+.cardHeaderButton {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.selectable:hover{
+    color: #01579b;
+}
+
+.userProfileImg{
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.imgRadius{
+    border-radius: 30px
+}
+
+.selectable{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.73);
+}
+
+.input-full label, .input-full input {
+    width: 100%;
+}
+
+.mapModel{
+    width: 600px ;
+    overflow: hidden;
+    height: 530px;
+}
+
+.mapModel .leaflet-popup-tip {
+    margin-top: -10px !important;
+}
+
+.no-padng-margn{
+    margin:0 !important;
+    padding: 0 !important;
+}
+
+.list-h3{
+    background: gainsboro;
+    text-align: center;
+}
+
+.content-height{
+    height: 170px;
+}
+
+.margin-zero {
+    margin: 0;
+}
+
+.activity-image {
+    width: 110px;
+    margin-left: 15px;
+}
+.activity-desc {
+    margin: 25px 15px;
+}
+
+.invalid_color {
+    color: #c10000;
+}
+.font_size12 {
+    font-size: 12px;
+}
+
+.overflowAuto {
+    overflow: auto !important;
+}
+
+/*.overflowHidden{
+    overflow: hidden;
+}*/
+
+.select2-drop-active {
+    position: inherit;
+}
+
+.select2-container-multi.select2-container-active .select2-choices {
+    border: 2px solid rgb(63,81,181);
+}
+
+.select2-drop-active {
+    border: 1px solid rgb(63,81,181);
+}
+
+.id_Error{
+    width: 350px;
+}
+
+/*custom dropdown*/
+.drop_down {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+.drop_down_list{
+    display: none;
+    width: 144px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 35px;
+    left: -41px;
+    z-index: 100;
+}
+.drop_down md-item-content {
+    padding: 2px 5px;
+}
+.drop_down md-item-content:hover {
+    color: #01579b;
+}
+.drop_down.open .drop_down_list {
+    display: block;
+}
+
+.chart {
+    height: 300px;
+    width: 300px;
+}
+.chart1 {
+    height: 250px;
+    width: 250px;
+}
+.chart2 {
+    height: 150px;
+    width: 150px;
+}
+
+.marLeft25 {
+    margin-left: 25px;
+}
+
+.angular-charts-template table {
+    max-width: none;
+}
+
+.gridListUserHome md-grid-list {
+    margin: 8px; }
+.gridListUserHome .gray {
+    background: #f5f5f5; }
+.gridListUserHome .green {
+    background: #b9f6ca; }
+.gridListUserHome .yellow {
+    background: #ffff8d; }
+.gridListUserHome .blue {
+    background: #84ffff; }
+.gridListUserHome .purple {
+    background: #b388ff; }
+.gridListUserHome .red {
+    background: #ff8a80; }
+.gridListUserHome md-grid-tile {
+    transition: all 400ms ease-out 50ms; }
+
+.groupButton {
+    z-index: 100;
+}
+
+.disabled {
+    color: #C1C1C1;
+    cursor: default;
+}
+
+.disabled md-item-content:hover {
+    color: #C1C1C1;
+}
